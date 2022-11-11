@@ -1,23 +1,21 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="かわいいは正義"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
 
-メロスは激怒した。[l][r]
+[bg storage=start.jpg time=500]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+昨日遊び疲れて早く寝た子犬。[l][r]
 
-(中略)[l][r]
+朝４時に目が覚めてしまった。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+ああ、おなかがすいたな。ママパパ起きてこないかな...[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_sleep] →もう一度寝てみる [endlink][r]
+[link target=*tag_cry] →鳴く [endlink][r]
 [s]
 
 *tag_sleep
@@ -26,21 +24,68 @@
 
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+子犬は静かに待った。[l][r]
+朝七時。[l][r]
+ママが降りてきた！[l][r]
+「おはよ。ご飯だよ。」[l][r]
+朝ごはんだ♪[l][r]
+食べ始めた子犬。そこに、ママが間違えて蹴とばしたボールが転がってきた...[l][r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_play] →遊ぶ [endlink][r]
+[link target=*tag_eat] →食べ続ける [endlink][r]
+[s]
 
-[jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_cry
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+[bg storage=cry.jpg time=500]
 
+眠そうなママが降りてきた！[l][r]
+「まだ朝早いんだから、静かにしなさい。」と怒られてしまった。[l][r]
+[link target=*tag_quiet] →しゅんとしてお座りしてみる。 [endlink][r]
+[link target=*tag_sulk] →ふてくされて寝たふりをする。 [endlink][r]
+[s]
+
+
+
+*tag_play
+[cm]
+[bg storage=play.jpg time=500]
+かじかじ...[l][r]
+ママも遊んで！！くるくる飛び跳ねる子犬[l][r]
+「えー食べ終わってないのに…仕方ないなあ」[l][r]
+たくさん遊んでもらって大満足♪[l][r]
+かわいいは正義[r]
 【 GOOD END 】[l][cm]
-
 [jump target=*start]
+
+*tag_eat
+[cm]
+[bg storage=eat.jpg time=500]
+「おいしい？よい子だねえ」[l][r]
+たくさん撫でてもらい、たくさん食べて、そのあとたっぷり遊んでもらった♪[r]
+【 GOOD END 】[l][cm]
+[jump target=*start]
+
+*tag_quiet
+[cm]
+[bg storage=quiet.jpg time=500]
+「あら、反省したの！？」[l][r]
+「仕方ないなあ、こっちおいで」[l][r]
+ママのあったかいお膝の上で、たくさん撫でてもらった♪[l][r]
+かわいいの勝利[r]
+【 GOOD END 】[l][cm]
+[jump target=*start]
+
+*tag_sulk
+[cm]
+[bg storage=sulk.jpg time=500]
+「すねちゃったの！」[l][r]
+「仕方ないなあ、ハイご飯」[l][r]
+たっぷり食べて、おなかいっぱいになって、ソファの上で幸せに眠った♪[l][r]
+かわいいの勝利[r]
+【 GOOD END 】[l][cm]
+[jump target=*start]
+
+
